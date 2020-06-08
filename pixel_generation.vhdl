@@ -16,9 +16,9 @@ begin
     process
     begin
         if rising_edge(clk) then
-            rgb(0) <= red and video_on;
+            rgb(2) <= red and video_on;
             rgb(1) <= green and video_on;
-            rgb(2) <= blue and video_on;
+            rgb(0) <= blue and video_on;
         end if;
     end process;
 

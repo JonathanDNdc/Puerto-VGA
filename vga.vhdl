@@ -15,7 +15,7 @@ entity vga is
     port(
         clk            : in  std_logic;
         red,green,blue : in  std_logic;
-        rgb            : out std_logic_vector(2 downto 0);
+        rgb            : out std_logic_vector(0 to 2);
         hsync, vsync   : out std_logic;
         clk_vga        : out std_logic
     );
